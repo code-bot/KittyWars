@@ -1,14 +1,5 @@
 //
-//  KittyWars-Bridging-Header.h
-//  KittyWars
-//
-//  Created by Sahaj Bhatt on 2/20/16.
-//  Copyright © 2016 Sahaj Bhatt. All rights reserved.
+//  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-#ifndef KittyWars_Bridging_Header_h
 #import <Firebase/Firebase.h>
-#define KittyWars_Bridging_Header_h
-
-
-#endif /* KittyWars_Bridging_Header_h */

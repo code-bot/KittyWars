@@ -14,10 +14,11 @@ class LaunchMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let defaults = NSUserDefaults.standardUserDefaults()
         Firebase.defaultConfig().persistenceEnabled = true
         if let user = defaults.stringForKey("username") {
             print(user)
-            usersRef = myRootRef.childByAppendingPath("users")
+            let usersRef = myRootRef.childByAppendingPath("users")
             usersRef.childByAppendingPath(user).keepSynced(true)
             usersRef.childByAppendingPath(user).observeEventType(.Value, withBlock {
                 snapshot in
@@ -32,7 +33,6 @@ class LaunchMenu: UIViewController {
     }
 
     @IBAction func playGame(sender: AnyObject) {
-        let defaults = NSUserDefaults.standardUserDefaults()
         if (hero != nil) {
             self.performSegueWithIdentifier("returningPlayerSegue", sender: self)
         } else {

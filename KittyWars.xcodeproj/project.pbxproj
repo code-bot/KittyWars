@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480A1421E7670DA0A637AC22 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DBBF3168C01EEB0036D5D8 /* Pods.framework */; };
+		52DE0FAC0F13D89EB367AD9D /* Pods_KittyWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33BC5A61E77B46836254DA5 /* Pods_KittyWars.framework */; };
+		5C0AC6CD2107F401BBBBC6A4 /* Pods_KittyWarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F33D5B0CA4BCF24CD5115D /* Pods_KittyWarsTests.framework */; };
 		87B542421C780DC00085E17B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B542411C780DC00085E17B /* AppDelegate.swift */; };
 		87B542441C780DC00085E17B /* LaunchMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B542431C780DC00085E17B /* LaunchMenu.swift */; };
 		87B542471C780DC00085E17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B542451C780DC00085E17B /* Main.storyboard */; };
@@ -33,7 +36,6 @@
 		B74E489D1C784E3D0063B085 /* KatanaSlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E489C1C784E3D0063B085 /* KatanaSlash.swift */; };
 		B74E489F1C784E4B0063B085 /* Catless.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E489E1C784E4B0063B085 /* Catless.swift */; };
 		B74E48A11C784E560063B085 /* FelineFerocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48A01C784E560063B085 /* FelineFerocity.swift */; };
-		C85F8C5D053049233CF59C5A /* libPods-KittyWars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 390346BA02F7889408C36830 /* libPods-KittyWars.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		390346BA02F7889408C36830 /* libPods-KittyWars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KittyWars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8727A2911C78349D00FD5DB1 /* KittyWars-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KittyWars-Bridging-Header.h"; sourceTree = "<group>"; };
+		439E29EED2905FF41235E2EA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		82F33D5B0CA4BCF24CD5115D /* Pods_KittyWarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KittyWarsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85DBBF3168C01EEB0036D5D8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B5423E1C780DC00085E17B /* KittyWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KittyWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B542411C780DC00085E17B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87B542431C780DC00085E17B /* LaunchMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchMenu.swift; sourceTree = "<group>"; };
@@ -63,6 +66,9 @@
 		87B542631C7815B70085E17B /* BattlePreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattlePreviewController.swift; sourceTree = "<group>"; };
 		87B542651C7815D60085E17B /* CharInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharInfoController.swift; sourceTree = "<group>"; };
 		87B542671C7815E10085E17B /* ClanInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClanInfoController.swift; sourceTree = "<group>"; };
+		87F97F271C785B3A00DCA675 /* KittyWars-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KittyWars-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0BF3D433BE1C114700C5416 /* Pods-KittyWarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittyWarsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KittyWarsTests/Pods-KittyWarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A33BC5A61E77B46836254DA5 /* Pods_KittyWars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KittyWars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B74E48821C784C430063B085 /* Kitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kitty.swift; sourceTree = "<group>"; };
 		B74E48831C784C430063B085 /* NinjaKitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinjaKitty.swift; sourceTree = "<group>"; };
 		B74E48841C784C430063B085 /* PirateKitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PirateKitty.swift; sourceTree = "<group>"; };
@@ -79,6 +85,8 @@
 		B74E489C1C784E3D0063B085 /* KatanaSlash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatanaSlash.swift; sourceTree = "<group>"; };
 		B74E489E1C784E4B0063B085 /* Catless.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catless.swift; sourceTree = "<group>"; };
 		B74E48A01C784E560063B085 /* FelineFerocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FelineFerocity.swift; sourceTree = "<group>"; };
+		BFE61F7137D2DF8923D1AB76 /* Pods-KittyWarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittyWarsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KittyWarsTests/Pods-KittyWarsTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD3A11B2D7F38C447DA8740B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FDCE73182DA9A06DB18F0D66 /* Pods-KittyWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittyWars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KittyWars/Pods-KittyWars.debug.xcconfig"; sourceTree = "<group>"; };
 		FEAB3B5D3A449470F9ADF8F3 /* Pods-KittyWars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittyWars.release.xcconfig"; path = "Pods/Target Support Files/Pods-KittyWars/Pods-KittyWars.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C85F8C5D053049233CF59C5A /* libPods-KittyWars.a in Frameworks */,
+				480A1421E7670DA0A637AC22 /* Pods.framework in Frameworks */,
+				52DE0FAC0F13D89EB367AD9D /* Pods_KittyWars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0AC6CD2107F401BBBBC6A4 /* Pods_KittyWarsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +161,7 @@
 				B74E488D1C784C430063B085 /* Purrley.swift */,
 				B74E489E1C784E4B0063B085 /* Catless.swift */,
 				B74E48A01C784E560063B085 /* FelineFerocity.swift */,
-				8727A2911C78349D00FD5DB1 /* KittyWars-Bridging-Header.h */,
+				87F97F271C785B3A00DCA675 /* KittyWars-Bridging-Header.h */,
 			);
 			path = KittyWars;
 			sourceTree = "<group>";
@@ -168,7 +178,9 @@
 		8C3B17BACFDFBAE7A4CC7FFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				390346BA02F7889408C36830 /* libPods-KittyWars.a */,
+				85DBBF3168C01EEB0036D5D8 /* Pods.framework */,
+				A33BC5A61E77B46836254DA5 /* Pods_KittyWars.framework */,
+				82F33D5B0CA4BCF24CD5115D /* Pods_KittyWarsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +190,10 @@
 			children = (
 				FDCE73182DA9A06DB18F0D66 /* Pods-KittyWars.debug.xcconfig */,
 				FEAB3B5D3A449470F9ADF8F3 /* Pods-KittyWars.release.xcconfig */,
+				A0BF3D433BE1C114700C5416 /* Pods-KittyWarsTests.debug.xcconfig */,
+				BFE61F7137D2DF8923D1AB76 /* Pods-KittyWarsTests.release.xcconfig */,
+				CD3A11B2D7F38C447DA8740B /* Pods.debug.xcconfig */,
+				439E29EED2905FF41235E2EA /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -209,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87B5425E1C780DC00085E17B /* Build configuration list for PBXNativeTarget "KittyWarsTests" */;
 			buildPhases = (
+				CAE65C6F8D53AAF06D0C9465 /* Check Pods Manifest.lock */,
 				87B5424E1C780DC00085E17B /* Sources */,
 				87B5424F1C780DC00085E17B /* Frameworks */,
 				87B542501C780DC00085E17B /* Resources */,
+				3804AF30EE906217715C9469 /* Embed Pods Frameworks */,
+				E06D4A7AAC5502954939277D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,6 +303,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3804AF30EE906217715C9469 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittyWarsTests/Pods-KittyWarsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3CCC20C170BAC6DB941F171C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +361,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittyWars/Pods-KittyWars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAE65C6F8D53AAF06D0C9465 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E06D4A7AAC5502954939277D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KittyWarsTests/Pods-KittyWarsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -421,6 +485,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -466,6 +531,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -484,32 +550,38 @@
 		};
 		87B5425C1C780DC00085E17B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDCE73182DA9A06DB18F0D66 /* Pods-KittyWars.debug.xcconfig */;
+			baseConfigurationReference = CD3A11B2D7F38C447DA8740B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KittyWars/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sahajbhatt.KittyWars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "KittyWars-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "KittyWars/KittyWars-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		87B5425D1C780DC00085E17B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEAB3B5D3A449470F9ADF8F3 /* Pods-KittyWars.release.xcconfig */;
+			baseConfigurationReference = 439E29EED2905FF41235E2EA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KittyWars/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sahajbhatt.KittyWars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "KittyWars-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "KittyWars/KittyWars-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		87B5425F1C780DC00085E17B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0BF3D433BE1C114700C5416 /* Pods-KittyWarsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = KittyWarsTests/Info.plist;
@@ -522,6 +594,7 @@
 		};
 		87B542601C780DC00085E17B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE61F7137D2DF8923D1AB76 /* Pods-KittyWarsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = KittyWarsTests/Info.plist;

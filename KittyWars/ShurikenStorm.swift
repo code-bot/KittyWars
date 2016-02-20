@@ -14,9 +14,11 @@ class ShurikenStorm: Ability {
     
     override init() {
         unlockLevel = 9
-        abilityType = "Ranged"
         amt = 95
+        super.init()
+        abilityType = "Ranged"
         typeOfKitty = "NinjaKitty"
+        
     }
     
     func run() {
