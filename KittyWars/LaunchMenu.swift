@@ -31,8 +31,6 @@ class LaunchMenu: UIViewController {
             self.performSegueWithIdentifier("returningPlayerSegue", sender: userData)
         } else {
             self.performSegueWithIdentifier("newPlayerSegue", sender: nil)
-        //hi
-            //hi
         }
     }
     
