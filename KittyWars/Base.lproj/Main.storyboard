@@ -125,9 +125,53 @@
                     <view key="view" contentMode="scaleToFill" id="Zhl-vS-06r">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-Pv-x6K">
+                                <rect key="frame" x="20" y="245" width="240" height="147"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bsZ-dY-OD3">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="2"/>
+                                        <color key="tintColor" red="0.05337949843960077" green="1" blue="0.00033646567800915683" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNj-OS-q9g">
+                                        <rect key="frame" x="0.0" y="19" width="240" height="128"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="llJ-eH-v0J">
+                                <rect key="frame" x="20" y="48" width="240" height="147"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SNy-L9-kLO">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="2"/>
+                                        <color key="tintColor" red="1" green="0.0187217119" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmJ-mt-2KE">
+                                        <rect key="frame" x="0.0" y="19" width="240" height="128"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dD-Lm-gjA">
+                                <rect key="frame" x="279" y="48" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3Q-TW-KZZ">
+                                <rect key="frame" x="279" y="245" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Clan" id="T8z-cr-gv0"/>
+                    <connections>
+                        <outlet property="ninjaCountLabel" destination="9dD-Lm-gjA" id="ghf-Qe-9hz"/>
+                        <outlet property="ninjaCounter" destination="SNy-L9-kLO" id="K2h-ZN-yMb"/>
+                        <outlet property="pirateCountLabel" destination="A3Q-TW-KZZ" id="K4e-S1-nbY"/>
+                        <outlet property="pirateCounter" destination="bsZ-dY-OD3" id="qEq-M9-xkY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zD9-kO-h9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
