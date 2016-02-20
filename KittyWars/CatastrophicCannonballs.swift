@@ -1,5 +1,5 @@
 //
-//  KittyKlaws.swift
+//  CatastrophicCannonballs.swift
 //  KittyWars
 //
 //  Created by Rahul Nambiar on 2/20/16.
@@ -8,14 +8,14 @@
 
 import Foundation
 
-class KittyKlaws: Ability {
+class CatastrophicCannonballs: Ability {
     var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
-        abilityType = "Defense"
+        abilityType = "Ranged"
         amt = 30
-        typeOfKitty = "NinjaKitty"
+        typeOfKitty = "PirateKitty"
     }
     
     func run() {

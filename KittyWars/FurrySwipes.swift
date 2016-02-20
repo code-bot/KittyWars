@@ -3,18 +3,18 @@
 //  KittyWars
 //
 //  Created by Rahul Nambiar on 2/20/16.
-//  Copyright © 2016 Sahaj Bhatt. All rights reserved.
+//  Copyright © 2016 Rahul Nambiar. All rights reserved.
 //
 
 import Foundation
 
-class KittyKlaws: Ability {
+class FurrySwipes: Ability {
     var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
-        abilityType = "Defense"
-        amt = 30
+        abilityType = "Melee"
+        amt = 50
         typeOfKitty = "NinjaKitty"
     }
     

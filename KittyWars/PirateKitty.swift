@@ -8,23 +8,23 @@
 
 import Foundation
 
-class PirateKitty {
-    var name : String
-    var currentHP : Int
-    var baseHP : Int
-    var attack : Int
-    var defense : Int
-    var agility : Int
-    var level : Int
-    var alive : Bool
-    var xp : Int
-    var abilitiesList = [Ability]()
-    var amtKills : Int
+class PirateKitty: Kitty {
     
     init(name : String) {
-        self.name = name;
-        currentHP = 150;
-        baseHP = 150;
-        attack = 10;
+        super.init(name : name, baseHP : 120, attack : 12, defense : 8, level : 1, xp : 0, amtKills : 0)
+    }
+    
+    override init(name : String, baseHP : Int, attack : Int, defense : Int,
+        level: Int, xp : Int,  amtKills : Int) {
+            self.name = name
+            self.baseHP = baseHP
+            self.attack = attack
+            self.defense = defense
+            self.level = level
+            self.xp = xp
+            self.amtKills = amtKills
+            currentHP = baseHP
+            alive = true
+            abilitiesList = [ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley()];
     }
 }

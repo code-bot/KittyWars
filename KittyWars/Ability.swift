@@ -9,5 +9,6 @@
 import Foundation
 
 class Ability {
-    
+    var abilityType = ""
+    var typeOfKitty = ""
 }

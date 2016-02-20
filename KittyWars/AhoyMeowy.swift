@@ -1,5 +1,5 @@
 //
-//  KittyKlaws.swift
+//  AhoyMeowy.swift
 //  KittyWars
 //
 //  Created by Rahul Nambiar on 2/20/16.
@@ -8,14 +8,14 @@
 
 import Foundation
 
-class KittyKlaws: Ability {
+class AhoyMeowy: Ability {
     var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
         abilityType = "Defense"
-        amt = 30
-        typeOfKitty = "NinjaKitty"
+        amt = 50
+        typeOfKitty = "PirateKitty"
     }
     
     func run() {

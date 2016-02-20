@@ -17,13 +17,18 @@
 		87B542641C7815B70085E17B /* BattlePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B542631C7815B70085E17B /* BattlePreviewController.swift */; };
 		87B542661C7815D60085E17B /* CharInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B542651C7815D60085E17B /* CharInfoController.swift */; };
 		87B542681C7815E10085E17B /* ClanInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B542671C7815E10085E17B /* ClanInfoController.swift */; };
-		B74E48621C782DE30063B085 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E485E1C782DE30063B085 /* Ability.swift */; };
-		B74E48631C782DE30063B085 /* Kitty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E485F1C782DE30063B085 /* Kitty.swift */; };
-		B74E48641C782DE30063B085 /* NinjaKitty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48601C782DE30063B085 /* NinjaKitty.swift */; };
-		B74E48651C782DE30063B085 /* PirateKitty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48611C782DE30063B085 /* PirateKitty.swift */; };
-		B74E48691C782DED0063B085 /* Purrtect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48661C782DED0063B085 /* Purrtect.swift */; };
-		B74E486A1C782DED0063B085 /* ShurikenStorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48671C782DED0063B085 /* ShurikenStorm.swift */; };
-		B74E486B1C782DED0063B085 /* KittyKlaws.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48681C782DED0063B085 /* KittyKlaws.swift */; };
+		B74E488E1C784C430063B085 /* Kitty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48821C784C430063B085 /* Kitty.swift */; };
+		B74E488F1C784C430063B085 /* NinjaKitty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48831C784C430063B085 /* NinjaKitty.swift */; };
+		B74E48901C784C430063B085 /* PirateKitty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48841C784C430063B085 /* PirateKitty.swift */; };
+		B74E48911C784C430063B085 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48851C784C430063B085 /* Ability.swift */; };
+		B74E48921C784C430063B085 /* Purrtect.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48861C784C430063B085 /* Purrtect.swift */; };
+		B74E48931C784C430063B085 /* ShurikenStorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48871C784C430063B085 /* ShurikenStorm.swift */; };
+		B74E48941C784C430063B085 /* FurrySwipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48881C784C430063B085 /* FurrySwipes.swift */; };
+		B74E48951C784C430063B085 /* KittyKlaws.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48891C784C430063B085 /* KittyKlaws.swift */; };
+		B74E48961C784C430063B085 /* ShiverMeWhiskers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E488A1C784C430063B085 /* ShiverMeWhiskers.swift */; };
+		B74E48971C784C430063B085 /* AhoyMeowy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E488B1C784C430063B085 /* AhoyMeowy.swift */; };
+		B74E48981C784C430063B085 /* CatastrophicCannonballs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E488C1C784C430063B085 /* CatastrophicCannonballs.swift */; };
+		B74E48991C784C430063B085 /* Purrley.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E488D1C784C430063B085 /* Purrley.swift */; };
 		C85F8C5D053049233CF59C5A /* libPods-KittyWars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 390346BA02F7889408C36830 /* libPods-KittyWars.a */; };
 /* End PBXBuildFile section */
 
@@ -54,13 +59,18 @@
 		87B542631C7815B70085E17B /* BattlePreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattlePreviewController.swift; sourceTree = "<group>"; };
 		87B542651C7815D60085E17B /* CharInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharInfoController.swift; sourceTree = "<group>"; };
 		87B542671C7815E10085E17B /* ClanInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClanInfoController.swift; sourceTree = "<group>"; };
-		B74E485E1C782DE30063B085 /* Ability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
-		B74E485F1C782DE30063B085 /* Kitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kitty.swift; sourceTree = "<group>"; };
-		B74E48601C782DE30063B085 /* NinjaKitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinjaKitty.swift; sourceTree = "<group>"; };
-		B74E48611C782DE30063B085 /* PirateKitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PirateKitty.swift; sourceTree = "<group>"; };
-		B74E48661C782DED0063B085 /* Purrtect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purrtect.swift; sourceTree = "<group>"; };
-		B74E48671C782DED0063B085 /* ShurikenStorm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShurikenStorm.swift; sourceTree = "<group>"; };
-		B74E48681C782DED0063B085 /* KittyKlaws.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KittyKlaws.swift; sourceTree = "<group>"; };
+		B74E48821C784C430063B085 /* Kitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kitty.swift; sourceTree = "<group>"; };
+		B74E48831C784C430063B085 /* NinjaKitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinjaKitty.swift; sourceTree = "<group>"; };
+		B74E48841C784C430063B085 /* PirateKitty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PirateKitty.swift; sourceTree = "<group>"; };
+		B74E48851C784C430063B085 /* Ability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		B74E48861C784C430063B085 /* Purrtect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purrtect.swift; sourceTree = "<group>"; };
+		B74E48871C784C430063B085 /* ShurikenStorm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShurikenStorm.swift; sourceTree = "<group>"; };
+		B74E48881C784C430063B085 /* FurrySwipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FurrySwipes.swift; sourceTree = "<group>"; };
+		B74E48891C784C430063B085 /* KittyKlaws.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KittyKlaws.swift; sourceTree = "<group>"; };
+		B74E488A1C784C430063B085 /* ShiverMeWhiskers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiverMeWhiskers.swift; sourceTree = "<group>"; };
+		B74E488B1C784C430063B085 /* AhoyMeowy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AhoyMeowy.swift; sourceTree = "<group>"; };
+		B74E488C1C784C430063B085 /* CatastrophicCannonballs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatastrophicCannonballs.swift; sourceTree = "<group>"; };
+		B74E488D1C784C430063B085 /* Purrley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purrley.swift; sourceTree = "<group>"; };
 		FDCE73182DA9A06DB18F0D66 /* Pods-KittyWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittyWars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KittyWars/Pods-KittyWars.debug.xcconfig"; sourceTree = "<group>"; };
 		FEAB3B5D3A449470F9ADF8F3 /* Pods-KittyWars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittyWars.release.xcconfig"; path = "Pods/Target Support Files/Pods-KittyWars/Pods-KittyWars.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,13 +127,18 @@
 				87B542631C7815B70085E17B /* BattlePreviewController.swift */,
 				87B542651C7815D60085E17B /* CharInfoController.swift */,
 				87B542671C7815E10085E17B /* ClanInfoController.swift */,
-				B74E485E1C782DE30063B085 /* Ability.swift */,
-				B74E485F1C782DE30063B085 /* Kitty.swift */,
-				B74E48601C782DE30063B085 /* NinjaKitty.swift */,
-				B74E48611C782DE30063B085 /* PirateKitty.swift */,
-				B74E48661C782DED0063B085 /* Purrtect.swift */,
-				B74E48671C782DED0063B085 /* ShurikenStorm.swift */,
-				B74E48681C782DED0063B085 /* KittyKlaws.swift */,
+				B74E48821C784C430063B085 /* Kitty.swift */,
+				B74E48831C784C430063B085 /* NinjaKitty.swift */,
+				B74E48841C784C430063B085 /* PirateKitty.swift */,
+				B74E48851C784C430063B085 /* Ability.swift */,
+				B74E48861C784C430063B085 /* Purrtect.swift */,
+				B74E48871C784C430063B085 /* ShurikenStorm.swift */,
+				B74E48881C784C430063B085 /* FurrySwipes.swift */,
+				B74E48891C784C430063B085 /* KittyKlaws.swift */,
+				B74E488A1C784C430063B085 /* ShiverMeWhiskers.swift */,
+				B74E488B1C784C430063B085 /* AhoyMeowy.swift */,
+				B74E488C1C784C430063B085 /* CatastrophicCannonballs.swift */,
+				B74E488D1C784C430063B085 /* Purrley.swift */,
 				8727A2911C78349D00FD5DB1 /* KittyWars-Bridging-Header.h */,
 			);
 			path = KittyWars;
@@ -309,19 +324,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B74E486A1C782DED0063B085 /* ShurikenStorm.swift in Sources */,
+				B74E48951C784C430063B085 /* KittyKlaws.swift in Sources */,
+				B74E48941C784C430063B085 /* FurrySwipes.swift in Sources */,
+				B74E48931C784C430063B085 /* ShurikenStorm.swift in Sources */,
+				B74E48961C784C430063B085 /* ShiverMeWhiskers.swift in Sources */,
+				B74E488F1C784C430063B085 /* NinjaKitty.swift in Sources */,
+				B74E48991C784C430063B085 /* Purrley.swift in Sources */,
 				87B542641C7815B70085E17B /* BattlePreviewController.swift in Sources */,
 				87B542621C78112F0085E17B /* NewPlayerController.swift in Sources */,
 				87B542441C780DC00085E17B /* LaunchMenu.swift in Sources */,
-				B74E48631C782DE30063B085 /* Kitty.swift in Sources */,
-				B74E48621C782DE30063B085 /* Ability.swift in Sources */,
-				B74E48641C782DE30063B085 /* NinjaKitty.swift in Sources */,
-				B74E486B1C782DED0063B085 /* KittyKlaws.swift in Sources */,
 				87B542661C7815D60085E17B /* CharInfoController.swift in Sources */,
-				B74E48691C782DED0063B085 /* Purrtect.swift in Sources */,
+				B74E48901C784C430063B085 /* PirateKitty.swift in Sources */,
+				B74E48911C784C430063B085 /* Ability.swift in Sources */,
+				B74E48921C784C430063B085 /* Purrtect.swift in Sources */,
+				B74E48971C784C430063B085 /* AhoyMeowy.swift in Sources */,
 				87B542421C780DC00085E17B /* AppDelegate.swift in Sources */,
-				B74E48651C782DE30063B085 /* PirateKitty.swift in Sources */,
+				B74E488E1C784C430063B085 /* Kitty.swift in Sources */,
 				87B542681C7815E10085E17B /* ClanInfoController.swift in Sources */,
+				B74E48981C784C430063B085 /* CatastrophicCannonballs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

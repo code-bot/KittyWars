@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class ShurikenStorm: Ability {
+    var unlockLevel : Int
+    var amt : Int //negative if healing, positive if dealing damage
+    
+    override init() {
+        abilityType = "Ranged"
+        amt = 40
+        typeOfKitty = "NinjaKitty"
+    }
+    
+    func run() {
+        
+    }
+}

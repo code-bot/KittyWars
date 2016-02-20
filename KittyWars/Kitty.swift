@@ -17,7 +17,7 @@ class Kitty {
     var level : Int
     var alive : Bool
     var xp : Int
-    var abilitiesList : Ability
+    var abilitiesList : [Ability]
     var amtKills : Int
     var kittyType : Kitty
     
@@ -32,12 +32,8 @@ class Kitty {
             self.amtKills = amtKills
             currentHP = baseHP;
             alive = true;
-            abilitiesList = [new Purrtect, ShurikenStorm, KittyKlaws, FurrySwipes,
-            ShiverMeWhiskers, AhoyMeowy, CatastrophicCannonballs, Purrley]
-    }
-    
-    func performAbility(a : Ability, enemy : Kitty) {
-        enemy.currentHP -= a.run()
+            abilitiesList = [Purrtect(), ShurikenStorm(), KittyKlaws(), FurrySwipes(),
+            ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley()]
     }
     
     func addAbility(a : Ability) {
@@ -63,6 +59,7 @@ class Kitty {
         level++
         attack += 10
         defense += 10
+        agility += 10
         baseHP += 20
         currentHP = baseHP
         //checks to see if ability needs to be added
