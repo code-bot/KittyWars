@@ -9,17 +9,12 @@
 import Foundation
 
 class Purrtect: Ability {
-    var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
-        amt = 50
         super.init()
+        amt = 50.0
         unlockLevel = 7
         abilityType = "Defense"
         typeOfKitty = "NinjaKitty"
-    }
-    
-    func run() {
-        
     }
 }

@@ -25,22 +25,55 @@ class PirateKitty: Kitty {
             kittyType = "Pirate"
     }
     
-    //need to implement
-//    func performAbility(a : Ability, enemy : NinjaKitty) {
-//        enemy.hp -= a.run()
-//    }
+    func performAbility(a : Ability, enemy : Kitty) {
+        if a.abilityType == "Defense" {
+            self.currentHP += a.amt
+            if (currentHP > baseHP) {
+                currentHP = baseHP
+            }
+            defense -= 0.01
+            if (defense < 0.04) {
+                defense = 0.06
+            }
+        } else {
+            enemy.currentHP -= a.amt
+            if (enemy.currentHP < 0) {
+                enemy.alive = false
+            }
+            attack += 0.004
+        }
+    }
     
-    func createEnemy() {
+    
+    
+    func enemyPerformAbility(hero : PirateKitty) {
+        var enemyAbilityList = [FurrySwipes(), DeadlyStare(), KittyKlaws(), KatanaSlash(), Purrtect(),
+            ShurikenStorm()];
+        var count = 0;
+        for a in enemyAbilityList {
+            if self.level < a.unlockLevel {
+                enemyAbilityList.removeAtIndex(count)
+            }
+            count++
+        }
+        let rand = Int(arc4random_uniform(UInt32(enemyAbilityList.count)))
+        let a = enemyAbilityList[rand]
+        //randomly pick ability
+        performAbility(a, enemy : hero)
+    }
+    
+    func createEnemy() -> NinjaKitty {
         var enemy : NinjaKitty
         if level < 2 {
             enemy = NinjaKitty(name : "Ninja Bobberman")
         } else {
-            var rand = Int(arc4random_uniform(3)) + level - 1
+            let rand = Int(arc4random_uniform(3)) + level - 1
             enemy = NinjaKitty(name : "Sensei Meow-Chan")
             for index in 1...(level - 1) {
                 enemy.levelUp()
             }
         }
+        return enemy;
     }
     
     func displayMeleeAbilities() -> [Ability] {

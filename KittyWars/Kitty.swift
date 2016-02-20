@@ -50,7 +50,7 @@ class Kitty {
     
     func win() {
         amtKills++
-        var rand = Int(arc4random_uniform(21) + 50)
+        let rand = Int(arc4random_uniform(21) + 50)
         xp += rand / level
         if xp >= 100 {
             levelUp()
