@@ -34,8 +34,12 @@
 		B74E48991C784C430063B085 /* Purrley.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E488D1C784C430063B085 /* Purrley.swift */; };
 		B74E489B1C784E180063B085 /* DeadlyStare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E489A1C784E180063B085 /* DeadlyStare.swift */; };
 		B74E489D1C784E3D0063B085 /* KatanaSlash.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E489C1C784E3D0063B085 /* KatanaSlash.swift */; };
-		B74E489F1C784E4B0063B085 /* Catless.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E489E1C784E4B0063B085 /* Catless.swift */; };
+		B74E489F1C784E4B0063B085 /* Catluss.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E489E1C784E4B0063B085 /* Catluss.swift */; };
 		B74E48A11C784E560063B085 /* FelineFerocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E48A01C784E560063B085 /* FelineFerocity.swift */; };
+		B765EE7D1C788EEE008AB1B5 /* NinjaNap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B765EE7C1C788EEE008AB1B5 /* NinjaNap.swift */; };
+		B765EE7F1C788EFB008AB1B5 /* Purricane.swift in Sources */ = {isa = PBXBuildFile; fileRef = B765EE7E1C788EFB008AB1B5 /* Purricane.swift */; };
+		B765EE811C788F09008AB1B5 /* Meowstorm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B765EE801C788F09008AB1B5 /* Meowstorm.swift */; };
+		B765EE831C788F15008AB1B5 /* VitaminC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B765EE821C788F15008AB1B5 /* VitaminC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,8 +87,12 @@
 		B74E488D1C784C430063B085 /* Purrley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purrley.swift; sourceTree = "<group>"; };
 		B74E489A1C784E180063B085 /* DeadlyStare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadlyStare.swift; sourceTree = "<group>"; };
 		B74E489C1C784E3D0063B085 /* KatanaSlash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatanaSlash.swift; sourceTree = "<group>"; };
-		B74E489E1C784E4B0063B085 /* Catless.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catless.swift; sourceTree = "<group>"; };
+		B74E489E1C784E4B0063B085 /* Catluss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catluss.swift; sourceTree = "<group>"; };
 		B74E48A01C784E560063B085 /* FelineFerocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FelineFerocity.swift; sourceTree = "<group>"; };
+		B765EE7C1C788EEE008AB1B5 /* NinjaNap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinjaNap.swift; sourceTree = "<group>"; };
+		B765EE7E1C788EFB008AB1B5 /* Purricane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Purricane.swift; sourceTree = "<group>"; };
+		B765EE801C788F09008AB1B5 /* Meowstorm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meowstorm.swift; sourceTree = "<group>"; };
+		B765EE821C788F15008AB1B5 /* VitaminC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VitaminC.swift; sourceTree = "<group>"; };
 		BFE61F7137D2DF8923D1AB76 /* Pods-KittyWarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittyWarsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KittyWarsTests/Pods-KittyWarsTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD3A11B2D7F38C447DA8740B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FDCE73182DA9A06DB18F0D66 /* Pods-KittyWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KittyWars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KittyWars/Pods-KittyWars.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,12 +163,16 @@
 				B74E48891C784C430063B085 /* KittyKlaws.swift */,
 				B74E489A1C784E180063B085 /* DeadlyStare.swift */,
 				B74E489C1C784E3D0063B085 /* KatanaSlash.swift */,
+				B765EE7C1C788EEE008AB1B5 /* NinjaNap.swift */,
+				B765EE7E1C788EFB008AB1B5 /* Purricane.swift */,
 				B74E488A1C784C430063B085 /* ShiverMeWhiskers.swift */,
 				B74E488B1C784C430063B085 /* AhoyMeowy.swift */,
 				B74E488C1C784C430063B085 /* CatastrophicCannonballs.swift */,
 				B74E488D1C784C430063B085 /* Purrley.swift */,
-				B74E489E1C784E4B0063B085 /* Catless.swift */,
+				B74E489E1C784E4B0063B085 /* Catluss.swift */,
 				B74E48A01C784E560063B085 /* FelineFerocity.swift */,
+				B765EE801C788F09008AB1B5 /* Meowstorm.swift */,
+				B765EE821C788F15008AB1B5 /* VitaminC.swift */,
 				87F97F271C785B3A00DCA675 /* KittyWars-Bridging-Header.h */,
 			);
 			path = KittyWars;
@@ -403,15 +415,19 @@
 				B74E48951C784C430063B085 /* KittyKlaws.swift in Sources */,
 				B74E48941C784C430063B085 /* FurrySwipes.swift in Sources */,
 				B74E48931C784C430063B085 /* ShurikenStorm.swift in Sources */,
+				B765EE7F1C788EFB008AB1B5 /* Purricane.swift in Sources */,
 				B74E48961C784C430063B085 /* ShiverMeWhiskers.swift in Sources */,
 				B74E488F1C784C430063B085 /* NinjaKitty.swift in Sources */,
 				B74E48991C784C430063B085 /* Purrley.swift in Sources */,
 				87B542641C7815B70085E17B /* BattlePreviewController.swift in Sources */,
 				B74E48A11C784E560063B085 /* FelineFerocity.swift in Sources */,
+				B765EE7D1C788EEE008AB1B5 /* NinjaNap.swift in Sources */,
+				B765EE811C788F09008AB1B5 /* Meowstorm.swift in Sources */,
 				B74E489D1C784E3D0063B085 /* KatanaSlash.swift in Sources */,
 				87B542621C78112F0085E17B /* NewPlayerController.swift in Sources */,
 				87B542441C780DC00085E17B /* LaunchMenu.swift in Sources */,
-				B74E489F1C784E4B0063B085 /* Catless.swift in Sources */,
+				B765EE831C788F15008AB1B5 /* VitaminC.swift in Sources */,
+				B74E489F1C784E4B0063B085 /* Catluss.swift in Sources */,
 				87B542661C7815D60085E17B /* CharInfoController.swift in Sources */,
 				B74E48901C784C430063B085 /* PirateKitty.swift in Sources */,
 				B74E48911C784C430063B085 /* Ability.swift in Sources */,

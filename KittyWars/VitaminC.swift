@@ -1,5 +1,5 @@
 //
-//  Catless.swift
+//  VitaminC(at).swift
 //  KittyWars
 //
 //  Created by Rahul Nambiar on 2/20/16.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-class Catless: Ability {
+class VitaminC: Ability {
     
     override init() {
         super.init()
-        amt = 30.0
-        unlockLevel = 2
-        abilityType = "Melee"
-        typeOfKitty = "NinjaKitty"
+        amt = 85.0
+        unlockLevel = 10
+        abilityType = "Defense"
+        typeOfKitty = "PirateKitty"
     }
 }

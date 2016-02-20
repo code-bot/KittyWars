@@ -12,7 +12,7 @@ class PirateKitty: Kitty {
     
     init(name : String) {
         super.init(name: name, baseHP : 120.0, attack : 1.0, defense : 0.08, level : 1, xp : 0, amtKills : 0)
-        abilitiesList = [Purrley(), Catless(), AhoyMeowy(), CatastrophicCannonballs(),
+        abilitiesList = [Purrley(), Catluss(), AhoyMeowy(), CatastrophicCannonballs(),
             ShiverMeWhiskers(), FelineFerocity()];
         kittyType = "Pirate"
     }
@@ -20,7 +20,7 @@ class PirateKitty: Kitty {
     override init(name : String, baseHP : Double, attack : Double, defense : Double,
         level: Int, xp : Int,  amtKills : Int) {
             super.init(name: name, baseHP: baseHP, attack: attack, defense: defense, level: level, xp: xp, amtKills: amtKills)
-            abilitiesList = [Purrley(), Catless(), AhoyMeowy(), CatastrophicCannonballs(),
+            abilitiesList = [Purrley(), Catluss(), AhoyMeowy(), CatastrophicCannonballs(),
                 ShiverMeWhiskers(), FelineFerocity()];
             kittyType = "Pirate"
     }

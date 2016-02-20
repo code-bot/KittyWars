@@ -35,7 +35,7 @@ class Kitty {
             alive = true;
             abilitiesList = [Purrtect(), ShurikenStorm(), KittyKlaws(), FurrySwipes(),
                 ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley(), DeadlyStare(),
-                KatanaSlash(), Catless(), FelineFerocity()]
+                KatanaSlash(), Catluss(), FelineFerocity()]
             kittyType = ""
     }
     
