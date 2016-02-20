@@ -9,13 +9,13 @@
 import Foundation
 
 class KatanaSlash: Ability {
-    var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        amt = 60
+        super.init()
         unlockLevel = 6
         abilityType = "Melee"
-        amt = 60
         typeOfKitty = "NinjaKitty"
     }
     

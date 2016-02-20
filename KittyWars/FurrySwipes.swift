@@ -9,13 +9,13 @@
 import Foundation
 
 class FurrySwipes: Ability {
-    var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        amt = 20
+        super.init()
         unlockLevel = 1
         abilityType = "Melee"
-        amt = 20
         typeOfKitty = "NinjaKitty"
     }
     

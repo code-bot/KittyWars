@@ -9,13 +9,13 @@
 import Foundation
 
 class Catless: Ability {
-    var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        amt = 30
+        super.init()
         unlockLevel = 2
         abilityType = "Melee"
-        amt = 30
         typeOfKitty = "NinjaKitty"
     }
     

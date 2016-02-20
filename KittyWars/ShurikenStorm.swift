@@ -9,13 +9,12 @@
 import Foundation
 
 class ShurikenStorm: Ability {
-    var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
-        unlockLevel = 9
         amt = 95
         super.init()
+        unlockLevel = 9
         abilityType = "Ranged"
         typeOfKitty = "NinjaKitty"
         

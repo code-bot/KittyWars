@@ -20,15 +20,7 @@ class NinjaKitty: Kitty {
     
     override init(name : String, baseHP : Double, attack : Double, defense : Double,
         level: Int, xp : Int,  amtKills : Int) {
-            self.name = name
-            self.baseHP = baseHP
-            self.attack = attack
-            self.defense = defense
-            self.level = level
-            self.xp = xp
-            self.amtKills = amtKills
-            currentHP = baseHP
-            alive = true
+            super.init(name: name, baseHP: baseHP, attack: attack, defense: defense, level: level, xp: xp, amtKills: amtKills)
             abilitiesList = [FurrySwipes(), DeadlyStare(), KittyKlaws(), KatanaSlash(), Purrtect(),
                 ShurikenStorm()];
             kittyType = "Ninja"
@@ -53,9 +45,9 @@ class NinjaKitty: Kitty {
     }
     
     func displayMeleeAbilities() -> [Ability] {
-        var meleeList : [Ability];
+        var meleeList = [Ability]();
         for a in abilitiesList {
-            if a.abilityType == "Melee" && a.unlockLevel() <= level {
+            if a.abilityType == "Melee" && a.unlockLevel <= level {
                 meleeList.append(a)
             }
         }
@@ -63,9 +55,9 @@ class NinjaKitty: Kitty {
     }
     
     func displayRangedAbilities() -> [Ability] {
-        var rangedList : [Ability];
+        var rangedList = [Ability]();
         for a in abilitiesList {
-            if a.abilityType == "Ranged" && a.unlockLevel() <= level {
+            if a.abilityType == "Ranged" && a.unlockLevel <= level {
                 rangedList.append(a)
             }
         }
@@ -73,9 +65,9 @@ class NinjaKitty: Kitty {
     }
     
     func displayDefenseAbilities() -> [Ability] {
-        var defenseList : [Ability];
+        var defenseList = [Ability]();
         for a in abilitiesList {
-            if a.abilityType == "Defense" && a.unlockLevel() <= level {
+            if a.abilityType == "Defense" && a.unlockLevel <= level {
                 defenseList.append(a)
             }
         }

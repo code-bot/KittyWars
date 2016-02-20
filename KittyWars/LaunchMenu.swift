@@ -20,13 +20,13 @@ class LaunchMenu: UIViewController {
             print(user)
             let usersRef = myRootRef.childByAppendingPath("users")
             usersRef.childByAppendingPath(user).keepSynced(true)
-            usersRef.childByAppendingPath(user).observeEventType(.Value, withBlock {
+            usersRef.childByAppendingPath(user).observeEventType(.Value, withBlock: {
                 snapshot in
-                let userData = snapshot.value as! [String : Object]
-                if (userData["type"] == "Ninja") {
-                    hero = NinjaKitty(name: user, baseHP: userData["baseHP"], attack: userData["attack"], defense: userData["defense"], level: userData["level"], xp: userData["xp"], amtKills: userData["amtKills"])
+                let userData = snapshot.value as! [String : AnyObject]
+                if (userData["type"] as! String == "Ninja") {
+                    hero = NinjaKitty(name: user, baseHP: userData["baseHP"] as! Double, attack: userData["attack"] as! Double, defense: userData["defense"] as! Double, level: userData["level"] as! Int, xp: userData["xp"] as! Int, amtKills: userData["amtKills"] as! Int)
                 } else {
-                    hero = PirateKitty(name: user, baseHP: userData["baseHP"], attack: userData["attack"], defense: userData["defense"], level: userData["level"], xp: userData["xp"], amtKills: userData["amtKills"])
+                    hero = PirateKitty(name: user, baseHP: userData["baseHP"] as! Double, attack: userData["attack"] as! Double, defense: userData["defense"] as! Double, level: userData["level"] as! Int, xp: userData["xp"] as! Int, amtKills: userData["amtKills"] as! Int)
                 }
                 })
         }

@@ -9,13 +9,13 @@
 import Foundation
 
 class AhoyMeowy: Ability {
-    var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        amt = 25
+        super.init()
         unlockLevel = 4
         abilityType = "Defense"
-        amt = 25
         typeOfKitty = "PirateKitty"
     }
     

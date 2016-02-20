@@ -9,13 +9,13 @@
 import Foundation
 
 class DeadlyStare: Ability {
-    var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        amt = 30
+        super.init()
         unlockLevel = 2
         abilityType = "Ranged"
-        amt = 30
         typeOfKitty = "NinjaKitty"
     }
     

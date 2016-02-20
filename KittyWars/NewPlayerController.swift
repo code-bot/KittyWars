@@ -26,14 +26,14 @@ class NewPlayerController: UIViewController {
                 } else {
                     let newNinja = [
                         "type" : "Ninja",
-                        "attack" : 10,
-                        "baseHP" : 100,
-                        "defense" : 10,
+                        "attack" : 10.0,
+                        "baseHP" : 100.0,
+                        "defense" : 10.0,
                         "level" : 1,
                         "xp" : 0,
                         "amtKills" : 0
                     ]
-                    myRootRef.childByAppendingPath("users").childByAppendingPath(catName.text).setValue(newNinja)
+                    myRootRef.childByAppendingPath("users").childByAppendingPath(self.catName.text).setValue(newNinja)
                 }
             }
             //segue and create new ninja
@@ -63,7 +63,7 @@ class NewPlayerController: UIViewController {
                         "xp" : 0,
                         "amtKills" : 0
                     ]
-                    myRootRef.childByAppendingPath("users").childByAppendingPath(catName.text).setValue(newPirate)
+                    myRootRef.childByAppendingPath("users").childByAppendingPath(self.catName.text).setValue(newPirate)
                 }
             }
             //segue and create new pirate

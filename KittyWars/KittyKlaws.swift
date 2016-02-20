@@ -9,14 +9,15 @@
 import Foundation
 
 class KittyKlaws: Ability {
-    var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        amt = 25
+        super.init()
         unlockLevel = 4
         abilityType = "Defense"
-        amt = 25
         typeOfKitty = "NinjaKitty"
+        
     }
     
     func run() {
