@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Menu-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchMenu" customModule="KittyWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFo-pa-Tpu">
+                                <rect key="frame" x="282" y="285" width="36" height="30"/>
+                                <state key="normal" title="PLAY"/>
+                                <connections>
+                                    <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8G-DE-Ppc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cFo-pa-Tpu" secondAttribute="trailing" constant="262" id="33p-Rh-aWL"/>
+                            <constraint firstItem="cFo-pa-Tpu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="265" id="ZTW-yW-Qnn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cFo-pa-Tpu" secondAttribute="bottom" constant="285" id="dRm-k4-uIz"/>
+                            <constraint firstItem="cFo-pa-Tpu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="262" id="hKb-Um-p00"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="333"/>
+        </scene>
+        <!--New Player-->
+        <scene sceneID="SPz-Ru-18r">
+            <objects>
+                <viewController title="New Player" id="h91-aG-eXL" customClass="NewPlayerController" customModule="KittyWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vl0-ZM-6Ti"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwR-4C-1rg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eMb-gm-Fm5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5h-87-pnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475" y="-334"/>
+        </scene>
+        <!--Clan-->
+        <scene sceneID="r8q-PM-WJ1">
+            <objects>
+                <viewController title="Clan" id="4Kz-HE-oSh" customClass="ClanInfoController" customModule="KittyWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ycd-EI-YQi"/>
+                        <viewControllerLayoutGuide type="bottom" id="24N-HV-UQ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zhl-vS-06r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Clan" id="T8z-cr-gv0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zD9-kO-h9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1245" y="1106"/>
+        </scene>
+        <!--Battle-->
+        <scene sceneID="LTe-7N-9iJ">
+            <objects>
+                <viewController title="Battle" id="zNh-Ae-A4D" customClass="BattlePreviewController" customModule="KittyWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yXI-iC-mEj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aqj-9V-m1o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="99a-Ov-UmR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Battle" id="4f7-yH-ewi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f28-gp-X7j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="-334"/>
+        </scene>
+        <!--Character-->
+        <scene sceneID="Fo3-lJ-F4q">
+            <objects>
+                <viewController title="Character" id="eWQ-KZ-dZW" customClass="CharInfoController" customModule="KittyWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wV2-3d-mie"/>
+                        <viewControllerLayoutGuide type="bottom" id="bNw-q4-WSB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MlA-66-X9j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Character" id="RU8-8p-5xI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxe-2z-ggh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1245" y="333"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gPv-jB-oMI">
+            <objects>
+                <tabBarController id="63H-gH-2cv" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="RIw-1x-DxI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zNh-Ae-A4D" kind="relationship" relationship="viewControllers" id="feU-xF-BWv"/>
+                        <segue destination="eWQ-KZ-dZW" kind="relationship" relationship="viewControllers" id="ffj-Xl-58A"/>
+                        <segue destination="4Kz-HE-oSh" kind="relationship" relationship="viewControllers" id="etQ-dQ-Prf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yik-FV-DBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475" y="333"/>
+        </scene>
+    </scenes>
+</document>
