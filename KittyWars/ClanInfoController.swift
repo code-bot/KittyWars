@@ -35,6 +35,16 @@ class ClanInfoController: UIViewController {
                 self.pirateCountLabel.text = String(count) + "/200"
             }
         })
+        
+        myRootRef.childByAppendingPath("locationLat").observeEventType(.Value, withBlock: {
+            snapshot in
+            let lat = snapshot.value;
+        })
+        
+        myRootRef.childByAppendingPath("locationLong").observeEventType(.Value, withBlock: {
+            snapshot in
+            let long = snapshot.value;
+        })
     }
     
     override func didReceiveMemoryWarning() {
