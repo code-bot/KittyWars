@@ -9,17 +9,12 @@
 import Foundation
 
 class AhoyMeowy: Ability {
-    var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
-        amt = 25
         super.init()
+        amt = 25.0
         unlockLevel = 4
         abilityType = "Defense"
         typeOfKitty = "PirateKitty"
-    }
-    
-    func run() {
-        
     }
 }

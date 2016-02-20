@@ -9,17 +9,12 @@
 import Foundation
 
 class CatastrophicCannonballs: Ability {
-    var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
-        amt = 65
         super.init()
+        amt = 65.0
         unlockLevel = 6
         abilityType = "Ranged"
         typeOfKitty = "PirateKitty"
-    }
-    
-    func run() {
-        
     }
 }

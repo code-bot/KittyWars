@@ -9,17 +9,12 @@
 import Foundation
 
 class Catless: Ability {
-    var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
-        amt = 30
         super.init()
+        amt = 30.0
         unlockLevel = 2
         abilityType = "Melee"
         typeOfKitty = "NinjaKitty"
-    }
-    
-    func run() {
-        
     }
 }
