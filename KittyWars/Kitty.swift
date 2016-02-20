@@ -33,25 +33,8 @@ class Kitty {
             currentHP = baseHP;
             alive = true;
             abilitiesList = [Purrtect(), ShurikenStorm(), KittyKlaws(), FurrySwipes(),
-            ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley()]
-    }
-    
-    func addAbility(a : Ability) {
-        abilitiesList.append(a)
-    }
-    
-    func displayMeleeAbilities() -> [Ability]() {
-        for a in abilitiesList {
-    
-        }
-    }
-    
-    func displayRangedAbilities() -> [Ability]() {
-    
-    }
-    
-    func displayDefensiveAbilities() -> [Ability]() {
-    
+            ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley(), DeadlyStare(),
+            KatanaSlash(), Catless(), FelineFerocity()]
     }
     
     func levelUp() {
@@ -62,8 +45,6 @@ class Kitty {
         agility += 10
         baseHP += 20
         currentHP = baseHP
-        //checks to see if ability needs to be added
-        addAbility(<#T##a: Ability##Ability#>)
     }
     
     func win() {
@@ -75,6 +56,6 @@ class Kitty {
     }
     
     func lose() {
-        
+        //implement
     }
 }

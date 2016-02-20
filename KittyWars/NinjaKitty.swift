@@ -25,10 +25,41 @@ class NinjaKitty: Kitty {
             self.amtKills = amtKills
             currentHP = baseHP
             alive = true
-            abilitiesList = [Purrtect(), ShurikenStorm(), KittyKlaws(), FurrySwipes()];
+            abilitiesList = [FurrySwipes(), DeadlyStare(), KittyKlaws(), KatanaSlash(), Purrtect(),
+            ShurikenStorm()];
     }
     
     func performAbility(a : Ability, enemy : PirateKitty) {
         enemy.hp -= a.run()
+    }
+    
+    func displayMeleeAbilities() -> [Ability] {
+        var meleeList : [Ability];
+        for a in abilitiesList {
+            if a.abilityType == "Melee" && a.unlockLevel() <= level {
+                meleeList.append(a)
+            }
+        }
+        return meleeList;
+    }
+    
+    func displayRangedAbilities() -> [Ability] {
+        var rangedList : [Ability];
+        for a in abilitiesList {
+            if a.abilityType == "Ranged" && a.unlockLevel() <= level {
+                rangedList.append(a)
+            }
+        }
+        return rangedList;
+    }
+    
+    func displayDefenseAbilities() -> [Ability] {
+        var defenseList : [Ability];
+        for a in abilitiesList {
+            if a.abilityType == "Defense" && a.unlockLevel() <= level {
+                defenseList.append(a)
+            }
+        }
+        return defenseList;
     }
 }

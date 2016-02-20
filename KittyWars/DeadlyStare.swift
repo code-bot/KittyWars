@@ -1,5 +1,5 @@
 //
-//  CatastrophicCannonballs.swift
+//  DeadlyStare.swift
 //  KittyWars
 //
 //  Created by Rahul Nambiar on 2/20/16.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-class CatastrophicCannonballs: Ability {
+class DeadlyStare: Ability {
     var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
-        unlockLevel = 6
+        unlockLevel = 2
         abilityType = "Ranged"
-        amt = 65
-        typeOfKitty = "PirateKitty"
+        amt = 30
+        typeOfKitty = "NinjaKitty"
     }
     
     func run() {

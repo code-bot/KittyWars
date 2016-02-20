@@ -13,8 +13,9 @@ class ShurikenStorm: Ability {
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        unlockLevel = 9
         abilityType = "Ranged"
-        amt = 40
+        amt = 95
         typeOfKitty = "NinjaKitty"
     }
     

@@ -13,8 +13,9 @@ class Purrley: Ability {
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        unlockLevel = 1
         abilityType = "Melee"
-        amt = 40
+        amt = 15
         typeOfKitty = "PirateKitty"
     }
     

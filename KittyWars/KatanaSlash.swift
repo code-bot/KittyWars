@@ -1,5 +1,5 @@
 //
-//  CatastrophicCannonballs.swift
+//  KatanaSlash.swift
 //  KittyWars
 //
 //  Created by Rahul Nambiar on 2/20/16.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-class CatastrophicCannonballs: Ability {
+class KatanaSlash: Ability {
     var unlockLevel : Int
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
         unlockLevel = 6
-        abilityType = "Ranged"
-        amt = 65
-        typeOfKitty = "PirateKitty"
+        abilityType = "Melee"
+        amt = 60
+        typeOfKitty = "NinjaKitty"
     }
     
     func run() {

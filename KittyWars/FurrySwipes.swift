@@ -13,8 +13,9 @@ class FurrySwipes: Ability {
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        unlockLevel = 1
         abilityType = "Melee"
-        amt = 50
+        amt = 20
         typeOfKitty = "NinjaKitty"
     }
     

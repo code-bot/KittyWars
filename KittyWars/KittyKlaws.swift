@@ -13,8 +13,9 @@ class KittyKlaws: Ability {
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        unlockLevel = 4
         abilityType = "Defense"
-        amt = 30
+        amt = 25
         typeOfKitty = "NinjaKitty"
     }
     

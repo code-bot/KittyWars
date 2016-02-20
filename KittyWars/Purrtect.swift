@@ -13,6 +13,7 @@ class Purrtect: Ability {
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        unlockLevel = 7
         abilityType = "Defense"
         amt = 50
         typeOfKitty = "NinjaKitty"

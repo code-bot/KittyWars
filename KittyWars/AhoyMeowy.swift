@@ -13,8 +13,9 @@ class AhoyMeowy: Ability {
     var amt : Int //negative if healing, positive if dealing damage
     
     override init() {
+        unlockLevel = 4
         abilityType = "Defense"
-        amt = 50
+        amt = 25
         typeOfKitty = "PirateKitty"
     }
     

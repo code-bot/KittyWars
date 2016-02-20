@@ -25,6 +25,37 @@ class PirateKitty: Kitty {
             self.amtKills = amtKills
             currentHP = baseHP
             alive = true
-            abilitiesList = [ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley()];
+            abilitiesList = [Purrley(), Catless(), AhoyMeowy(), CatastrophicCannonballs(),
+            ShiverMeWhiskers(), FelineFerocity()];
+    }
+    
+    func displayMeleeAbilities() -> [Ability] {
+        var meleeList : [Ability];
+        for a in abilitiesList {
+            if a.abilityType == "Melee" && a.unlockLevel() <= level {
+                meleeList.append(a)
+            }
+        }
+        return meleeList;
+    }
+    
+    func displayRangedAbilities() -> [Ability] {
+        var rangedList : [Ability];
+        for a in abilitiesList {
+            if a.abilityType == "Ranged" && a.unlockLevel() <= level {
+                rangedList.append(a)
+            }
+        }
+        return rangedList;
+    }
+    
+    func displayDefenseAbilities() -> [Ability] {
+        var defenseList : [Ability];
+        for a in abilitiesList {
+            if a.abilityType == "Defense" && a.unlockLevel() <= level {
+                defenseList.append(a)
+            }
+        }
+        return defenseList;
     }
 }
