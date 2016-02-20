@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import Darwin
 
 class Kitty {
     var name : String
     var currentHP : Int
     var baseHP : Int
-    var attack : Int
-    var defense : Int
+    var attack : Double
+    var defense : Double
     var level : Int
     var alive : Bool
     var xp : Int
@@ -21,7 +22,7 @@ class Kitty {
     var amtKills : Int
     var kittyType : Kitty
     
-    init(name : String, baseHP : Int, attack : Int, defense : Int,
+    init(name : String, baseHP : Int, attack : Double, defense : Double,
         level: Int, xp : Int,  amtKills : Int) {
             self.name = name
             self.baseHP = baseHP
@@ -33,29 +34,33 @@ class Kitty {
             currentHP = baseHP;
             alive = true;
             abilitiesList = [Purrtect(), ShurikenStorm(), KittyKlaws(), FurrySwipes(),
-            ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley(), DeadlyStare(),
-            KatanaSlash(), Catless(), FelineFerocity()]
+                ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley(), DeadlyStare(),
+                KatanaSlash(), Catless(), FelineFerocity()]
     }
     
     func levelUp() {
         xp -= 100
         level++
-        attack += 10
-        defense += 10
-        agility += 10
-        baseHP += 20
+        attack += .05 + (0.01 * level)
+        defense += .03 + (0.008 * level)
+        baseHP += 20 + (1.5 * level)
         currentHP = baseHP
     }
     
     func win() {
         amtKills++
-        xp += 20
-        if (xp >= 100) {
+        var rand = Int(arc4random_uniform(21) + 50)
+        xp += rand / level
+        if xp >= 100 {
             levelUp()
         }
     }
     
     func lose() {
-        //implement
+        alive = false;
+        xp -= 15
+        if xp < 0 {
+            xp = 0
+        }
     }
 }

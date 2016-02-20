@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import Darwin
 
 class NinjaKitty: Kitty {
     
     init(name : String) {
-        super.init(name : name, baseHP : 120, attack : 12, defense : 8, level : 1, xp : 0, amtKills : 0)
+        super.init(name : name, baseHP : 110, attack : 1.2, defense : 0.05, level : 1, xp : 0, amtKills : 0)
+        abilitiesList = [FurrySwipes(), DeadlyStare(), KittyKlaws(), KatanaSlash(), Purrtect(),
+            ShurikenStorm()];
     }
     
-    override init(name : String, baseHP : Int, attack : Int, defense : Int,
+    override init(name : String, baseHP : Int, attack : Double, defense : Double,
         level: Int, xp : Int,  amtKills : Int) {
             self.name = name
             self.baseHP = baseHP
@@ -26,11 +29,25 @@ class NinjaKitty: Kitty {
             currentHP = baseHP
             alive = true
             abilitiesList = [FurrySwipes(), DeadlyStare(), KittyKlaws(), KatanaSlash(), Purrtect(),
-            ShurikenStorm()];
+                ShurikenStorm()];
     }
     
+    //need to implement
     func performAbility(a : Ability, enemy : PirateKitty) {
         enemy.hp -= a.run()
+    }
+    
+    func createEnemy() {
+        var enemy : PirateKitty
+        if level < 2 {
+            enemy = PirateKitty(name : "Pirate Bobberman")
+        } else {
+            var rand = Int(arc4random_uniform(3) + level - 1)
+            enemy = PirateKitty(name : "Captain Blackwhiskers")
+            for index in 1...(level - 1) {
+                enemy.levelUp()
+            }
+        }
     }
     
     func displayMeleeAbilities() -> [Ability] {
