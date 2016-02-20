@@ -11,4 +11,5 @@ import Foundation
 class Ability {
     var abilityType = ""
     var typeOfKitty = ""
+    var unlockLevel = 0
 }

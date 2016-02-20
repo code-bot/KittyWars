@@ -11,8 +11,8 @@ import Darwin
 
 class Kitty {
     var name : String
-    var currentHP : Int
-    var baseHP : Int
+    var currentHP : Double
+    var baseHP : Double
     var attack : Double
     var defense : Double
     var level : Int
@@ -20,9 +20,9 @@ class Kitty {
     var xp : Int
     var abilitiesList : [Ability]
     var amtKills : Int
-    var kittyType : Kitty
+    var kittyType : String
     
-    init(name : String, baseHP : Int, attack : Double, defense : Double,
+    init(name : String, baseHP : Double, attack : Double, defense : Double,
         level: Int, xp : Int,  amtKills : Int) {
             self.name = name
             self.baseHP = baseHP
@@ -36,14 +36,15 @@ class Kitty {
             abilitiesList = [Purrtect(), ShurikenStorm(), KittyKlaws(), FurrySwipes(),
                 ShiverMeWhiskers(), AhoyMeowy(), CatastrophicCannonballs(), Purrley(), DeadlyStare(),
                 KatanaSlash(), Catless(), FelineFerocity()]
+            kittyType = ""
     }
     
     func levelUp() {
         xp -= 100
         level++
-        attack += .05 + (0.01 * level)
-        defense += .03 + (0.008 * level)
-        baseHP += 20 + (1.5 * level)
+        attack += 0.05 + (0.01 * Double(level))
+        defense += 0.03 + (0.008 * Double(level))
+        baseHP += 20.0 + (1.5 * Double(level))
         currentHP = baseHP
     }
     

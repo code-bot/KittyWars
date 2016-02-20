@@ -11,12 +11,13 @@ import Foundation
 class PirateKitty: Kitty {
     
     init(name : String) {
-        super.init(name : name, baseHP : 120, attack : 1.0, defense : 0.08, level : 1, xp : 0, amtKills : 0)
+        super.init(name: name, baseHP : 120.0, attack : 1.0, defense : 0.08, level : 1, xp : 0, amtKills : 0)
         abilitiesList = [Purrley(), Catless(), AhoyMeowy(), CatastrophicCannonballs(),
             ShiverMeWhiskers(), FelineFerocity()];
+        kittyType = "Pirate"
     }
     
-    override init(name : String, baseHP : Int, attack : Double, defense : Double,
+    override init(name : String, baseHP : Double, attack : Double, defense : Double,
         level: Int, xp : Int,  amtKills : Int) {
             self.name = name
             self.baseHP = baseHP
@@ -29,19 +30,20 @@ class PirateKitty: Kitty {
             alive = true
             abilitiesList = [Purrley(), Catless(), AhoyMeowy(), CatastrophicCannonballs(),
                 ShiverMeWhiskers(), FelineFerocity()];
+            kittyType = "Pirate"
     }
     
     //need to implement
-    func performAbility(a : Ability, enemy : NinjaKitty) {
-        enemy.hp -= a.run()
-    }
+//    func performAbility(a : Ability, enemy : NinjaKitty) {
+//        enemy.hp -= a.run()
+//    }
     
     func createEnemy() {
         var enemy : NinjaKitty
         if level < 2 {
             enemy = NinjaKitty(name : "Ninja Bobberman")
         } else {
-            var rand = Int(arc4random_uniform(3) + level - 1)
+            var rand = Int(arc4random_uniform(3)) + level - 1
             enemy = NinjaKitty(name : "Sensei Meow-Chan")
             for index in 1...(level - 1) {
                 enemy.levelUp()
@@ -52,7 +54,7 @@ class PirateKitty: Kitty {
     func displayMeleeAbilities() -> [Ability] {
         var meleeList : [Ability];
         for a in abilitiesList {
-            if a.abilityType == "Melee" && a.unlockLevel() <= level {
+            if a.abilityType == "Melee" && a.unlockLevel <= level {
                 meleeList.append(a)
             }
         }
@@ -62,7 +64,7 @@ class PirateKitty: Kitty {
     func displayRangedAbilities() -> [Ability] {
         var rangedList : [Ability];
         for a in abilitiesList {
-            if a.abilityType == "Ranged" && a.unlockLevel() <= level {
+            if a.abilityType == "Ranged" && a.unlockLevel <= level {
                 rangedList.append(a)
             }
         }
@@ -72,7 +74,7 @@ class PirateKitty: Kitty {
     func displayDefenseAbilities() -> [Ability] {
         var defenseList : [Ability];
         for a in abilitiesList {
-            if a.abilityType == "Defense" && a.unlockLevel() <= level {
+            if a.abilityType == "Defense" && a.unlockLevel <= level {
                 defenseList.append(a)
             }
         }
