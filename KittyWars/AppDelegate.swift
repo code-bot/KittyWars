@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 var myRootRef = Firebase(url:"https://kittywarsios.firebaseio.com")
 var hero : Kitty?
