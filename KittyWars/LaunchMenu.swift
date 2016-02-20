@@ -32,6 +32,7 @@ class LaunchMenu: UIViewController {
         } else {
             self.performSegueWithIdentifier("newPlayerSegue", sender: nil)
         //hi
+            //hi
         }
     }
     
