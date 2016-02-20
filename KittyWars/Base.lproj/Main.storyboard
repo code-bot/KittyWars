@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -34,10 +34,14 @@
                             <constraint firstItem="cFo-pa-Tpu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="262" id="hKb-Um-p00"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="h91-aG-eXL" kind="show" identifier="newPlayerSegue" id="8gH-Nh-qaf"/>
+                        <segue destination="63H-gH-2cv" kind="show" identifier="returningPlayerSegue" id="c1o-ve-kPd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-207" y="333"/>
+            <point key="canvasLocation" x="-251" y="333"/>
         </scene>
         <!--New Player-->
         <scene sceneID="SPz-Ru-18r">
@@ -50,8 +54,56 @@
                     <view key="view" contentMode="scaleToFill" id="eMb-gm-Fm5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d5f-Zn-bet">
+                                <rect key="frame" x="252" y="118" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your cat name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHm-Ri-Vss">
+                                <rect key="frame" x="223" y="72" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcX-Ib-BXG">
+                                <rect key="frame" x="108" y="236" width="35" height="30"/>
+                                <state key="normal" title="Ninja"/>
+                                <connections>
+                                    <action selector="chooseNinja:" destination="h91-aG-eXL" eventType="touchUpInside" id="Ab6-Gi-IHo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRn-xi-oMZ">
+                                <rect key="frame" x="460" y="236" width="40" height="30"/>
+                                <state key="normal" title="Pirate"/>
+                                <connections>
+                                    <action selector="choosePirate:" destination="h91-aG-eXL" eventType="touchUpInside" id="VQB-Mx-slS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TRn-xi-oMZ" secondAttribute="trailing" constant="80" id="3yZ-AE-AOg"/>
+                            <constraint firstItem="TRn-xi-oMZ" firstAttribute="leading" secondItem="UcX-Ib-BXG" secondAttribute="trailing" constant="317" id="9S0-ja-R0E"/>
+                            <constraint firstItem="UcX-Ib-BXG" firstAttribute="leading" secondItem="eMb-gm-Fm5" secondAttribute="leadingMargin" constant="88" id="ANx-Uz-pCM"/>
+                            <constraint firstItem="lwR-4C-1rg" firstAttribute="top" secondItem="d5f-Zn-bet" secondAttribute="bottom" constant="452" id="CB3-UK-oyQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d5f-Zn-bet" secondAttribute="trailing" constant="231" id="EqN-Tz-y6c"/>
+                            <constraint firstItem="TRn-xi-oMZ" firstAttribute="leading" secondItem="UcX-Ib-BXG" secondAttribute="trailing" constant="317" id="GQN-E7-g7W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yHm-Ri-Vss" secondAttribute="trailing" constant="203" id="K8b-O0-Iiw"/>
+                            <constraint firstItem="d5f-Zn-bet" firstAttribute="top" secondItem="yHm-Ri-Vss" secondAttribute="bottom" constant="25" id="MCK-ai-DHW"/>
+                            <constraint firstItem="d5f-Zn-bet" firstAttribute="top" secondItem="yHm-Ri-Vss" secondAttribute="bottom" constant="25" id="XLs-hG-ktL"/>
+                            <constraint firstItem="yHm-Ri-Vss" firstAttribute="leading" secondItem="eMb-gm-Fm5" secondAttribute="leadingMargin" constant="203" id="dgM-zc-WgK"/>
+                            <constraint firstItem="d5f-Zn-bet" firstAttribute="leading" secondItem="eMb-gm-Fm5" secondAttribute="leadingMargin" constant="232" id="gCd-H7-qPh"/>
+                            <constraint firstItem="lwR-4C-1rg" firstAttribute="top" secondItem="TRn-xi-oMZ" secondAttribute="bottom" constant="334" id="jc0-2d-dn5"/>
+                            <constraint firstItem="TRn-xi-oMZ" firstAttribute="top" secondItem="vl0-ZM-6Ti" secondAttribute="bottom" constant="216" id="lil-9q-jZf"/>
+                            <constraint firstItem="UcX-Ib-BXG" firstAttribute="top" secondItem="vl0-ZM-6Ti" secondAttribute="bottom" constant="216" id="rZG-0i-roA"/>
+                            <constraint firstItem="lwR-4C-1rg" firstAttribute="top" secondItem="UcX-Ib-BXG" secondAttribute="bottom" constant="334" id="yqg-E6-gb0"/>
+                            <constraint firstItem="yHm-Ri-Vss" firstAttribute="top" secondItem="vl0-ZM-6Ti" secondAttribute="bottom" constant="52" id="yu5-nS-5ra"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="catName" destination="d5f-Zn-bet" id="FlC-qb-CwA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y5h-87-pnX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

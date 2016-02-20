@@ -9,6 +9,7 @@
 import UIKit
 
 var myRootRef = Firebase(url:"https://kittywarsios.firebaseio.com")
+var hero : Kitty?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
