@@ -1,5 +1,5 @@
 # KittyWars
-
+(OLD VERSION without spritebuilder)
 MHacks Spring 2016 Project:
 
 iOS Game
